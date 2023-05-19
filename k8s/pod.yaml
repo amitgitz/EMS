@@ -1,0 +1,20 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+
+  name: ems
+
+spec:
+
+  containers:
+
+  - name: ems
+
+    image: amitchoudhary47/ems:latest
+
+    ports:
+
+    - containerPort: 8000
+

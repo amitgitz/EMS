@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: es-deployment
+
+  labels:
+
+    app: ems
+
+spec:
+
+  replicas: 3
+
+  selector:
+
+    matchLabels:
+
+      app: ems
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: ems
+
+    spec:
+
+      containers:
+
+      - name: ems
+
+        image: amitchoudhary47/ems:latest
+
+        ports:
+
+        - containerPort: 8000
+
