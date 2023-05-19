@@ -74,11 +74,13 @@ SSH into the EC2 instance using Bash and navigate to the Ubuntu directory:
 ```bash
 $ mkdir projects
 $ cd projects
-$ git clone https://github.com/amitgitz/EMS.git ```
+$ git clone https://github.com/amitgitz/EMS.git 
+```
 Navigate to the project folder:
 
 ```bash
-$ cd EMS ```
+$ cd EMS
+```
 **Install the required dependencies:**
 ```bash
 $ sudo apt update
@@ -90,7 +92,8 @@ $ pip3 install django
 ```bash
 $ python manage.py makemigrations
 $ python manage.py migrate
-$ python manage.py runserver 0.0.0.0:8000 ```
+$ python manage.py runserver 0.0.0.0:8000 
+```
 
 Access the website using the EC2 instance's public IP address and port 8000.
 
@@ -104,7 +107,8 @@ $ sudo apt install docker-compose
 ```
 **Create the Dockerfile in the EMS directory:**
 ```bash
-$ vi Dockerfile ```
+$ vi Dockerfile 
+```
 
 **Add the followingcontent to the Dockerfile:**
 `Dockerfile`
@@ -121,8 +125,8 @@ CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 
 ```
 **Create the Docker image and run the application: **
-```bash
 
+```
 $ sudo docker build . -t ems:v1
 $ sudo docker run -p 8000:8000 ems:v1
 ```
