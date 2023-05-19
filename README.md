@@ -2,7 +2,7 @@
 A simple webapp to Manage Employee-Management-System
 
 
-### Setup on EC2 using Docker, Jenkins File, SonarQube and ECR
+### Local Setup
 To get this repository, run the following command inside your git enabled terminal
 ```bash
 $ git clone https://github.com/amitgitz/EMS.git
