@@ -26,13 +26,13 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 ```
 Now start the MiniKube using the following command
 ```
-$ minkube start
+$ minikube start
 ```
 if MiniKube not Stated then put the following command
 Add docker as a user by giving the following command
 ```
 $ sudo usermod -aG docker $USER && newgrp docker
-$ minkube start --driver=docker
+$ minikube start --driver=docker
 ```
 Now Install the Kubectl
 ```
